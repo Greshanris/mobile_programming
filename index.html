@@ -8,42 +8,120 @@
   </head>
   <body>
     <header>
-        <h1 style="text-align: center;">Table HTML Task | Week 2</h1>
+      <h1 style="text-align: center">Table HTML Task | Week 2</h1>
     </header>
     <main>
+      <div class="div-section">
+        <h2>Table Section</h2>
         <table id="tableOne">
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Zodiac</th>
-                <th>Traits</th>
-                <th>Favourite Social Media</th>
-            </tr>
-            <tr>
-                <td>Rishav Chaudhary</td>
-                <td>22</td>
-                <td>Aries</td>
-                <td>Courageous, energetic, independent, and competitive. </td>
-                <td> <a href="https://www.facebook.com" target="_blank" title="www.facebook.com" styl>Facebook</a> </td>
-            </tr>
-            <tr>
-                <td>Roshan Lamicchane</td>
-                <td>19</td>
-                <td>Aries</td>
-                <td>Courageous, energetic, independent, and competitive. </td>
-                <td> <a href="https://www.linkedin.com/feed/" target="_blank" title="www.linkedin.com">Linkedin</a> </td>
-            </tr>
-            <tr>
-                <td>Nishant Pokhrel</td>
-                <td>22</td>
-                <td>Aquarius</td>
-                <td>Independent, innovative, humanitarian, and forward-thinking</td>
-                <td> <a href="https://tryhackme.com/" target="_blank" title="www.tryhackme.com">TryHackMe</a> </td>
-            </tr>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Zodiac</th>
+            <th>Traits</th>
+            <th>Favourite Social Media</th>
+          </tr>
+          <tr>
+            <td>Rishav Chaudhary</td>
+            <td>22</td>
+            <td>Aries</td>
+            <td>Courageous, energetic, independent, and competitive.</td>
+            <td>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                title="www.facebook.com"
+                styl
+                >Facebook</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Roshan Lamicchane</td>
+            <td>19</td>
+            <td>Aries</td>
+            <td>Courageous, energetic, independent, and competitive.</td>
+            <td>
+              <a
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+                title="www.linkedin.com"
+                >Linkedin</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Nishant Pokhrel</td>
+            <td>22</td>
+            <td>Aquarius</td>
+            <td>Independent, innovative, humanitarian, and forward-thinking</td>
+            <td>
+              <a
+                href="https://tryhackme.com/"
+                target="_blank"
+                title="www.tryhackme.com"
+                >TryHackMe</a
+              >
+            </td>
+          </tr>
         </table>
+      </div>
+
+      <div class="div-section">
+        <h2>List Section</h2>
+        <dl>
+          <dt>Tea</dt>
+          <dt>- Made from tea leaves</dt>
+          <dt>Coffee</dt>
+          <dt>- Black hot drink</dt>
+        </dl>
+      </div>
+
+      <div class="div-section">
+        <h2>HTML JavaScript</h2>
+
+        <img src="./images/lightbulb.png" alt="light_bulb_off" id="myImage" />
+
+        <div class="div-section-inner">
+          <button type="button" onclick="myFunction(1)">ON</button>
+          <button type="button" onclick="myFunction(0)">OFF</button>
+        </div>
+      </div>
+
+      <div class="div-section">
+        <h2>Classwork | 10 July 2025</h2>
+
+        <div class="div-section-inner">
+          <p id="text">
+            This is a <span id="span-text">sample</span> text that will be
+            scaled
+          </p>
+            <button type="button" onclick="scaleText()">Scale Text</button>
+        </div>
+      </div>
     </main>
     <footer>
-        <p id="footer-section">Rishav Chaudhary</p>
+      <p id="footer-section">- Rishav Chaudhary -</p>
     </footer>
+
+    <script>
+      function myFunction(a) {
+        let pic;
+        if (a == 0) {
+          pic = "./images/lightbulb.png";
+        } else {
+          pic = "./images/lightbulb_on.png";
+        }
+
+        document.getElementById("myImage").src = pic;
+      }
+
+      let span = document.getElementById("span-text");
+
+      function scaleText() {
+        span.style.fontSize = "23px";
+        span.classList.add("hover-enabled");
+      }
+    </script>
   </body>
 </html>
