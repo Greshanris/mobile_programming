@@ -96,7 +96,10 @@
             This is a <span id="span-text">sample</span> text that will be
             scaled
           </p>
-            <button type="button" onclick="scaleText()">Scale Text</button>
+          <div class="innerdiv">
+            <button type="button" onclick="scaleText(0)">Scale Text</button>
+            <button type="button" onclick="scaleText(1)">Reset</button>
+          </div>
         </div>
       </div>
     </main>
@@ -113,14 +116,25 @@
           pic = "./images/lightbulb_on.png";
         }
 
-        document.getElementById("myImage").src = pic;
+        let myImage = document.getElementById("myImage");
+
+        myImage.src = pic;
+
+        if (myImage.src === "./images/lightbulb_on.png") {
+          myImage.style.color = "green";
+        }
       }
 
       let span = document.getElementById("span-text");
 
-      function scaleText() {
-        span.style.fontSize = "23px";
-        span.classList.add("hover-enabled");
+      function scaleText(a) {
+        if (a == 0) {
+          span.style.fontSize = "23px";
+          span.classList.add("hover-enabled");
+        } else {
+          span.style.fontSize = "16px";
+          span.classList.remove("hover-enabled");
+        }
       }
     </script>
   </body>

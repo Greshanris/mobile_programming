@@ -7,11 +7,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 header {
   margin: 2px;
-  height: 1/2;
 }
 
 header:hover {
@@ -103,4 +103,16 @@ a:hover {
 .hover-enabled:hover {
   color: green;
   cursor: pointer;
+}
+
+.innerdiv {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+.innerdiv button {
+  width: 100%;
+  height: 70%;
 }
