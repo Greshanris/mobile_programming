@@ -8,9 +8,30 @@
   </head>
   <body>
     <header>
-      <h1 style="text-align: center">Table HTML Task | Week 2</h1>
+      <h1>Table HTML Task | Week 2 |</h1>
+      <div id="menu">
+        <img
+          src="./images/menu.png"
+          id="menuIcon"
+          alt="hamburger menu"
+          onclick="menuFunction()"
+          title="Menu"
+        />
+      </div>
     </header>
     <main>
+      <fieldset>
+        <legend>Navigation</legend>
+        <div id="navigation">
+          <a href="./pages/week_three.html">Week Three</a>
+          <a href="./pages/week_four.html">Week Four</a>
+          <a href="./pages/week_five.html">Week Five</a>
+          <a href="./pages/week_six.html">Week Six</a>
+          <a href="./pages/week_seven.html">Week Seven</a>
+          <a href="./pages/week_eight.html">Week Eight</a>
+        </div>
+      </fieldset>
+
       <div class="div-section">
         <h2>Table Section</h2>
         <table id="tableOne">
@@ -80,7 +101,11 @@
       <div class="div-section">
         <h2>HTML JavaScript</h2>
 
-        <img src="./images/lightbulb.png" alt="light_bulb_off" id="myImage" />
+        <img
+          src="./images/lightbulb.png"
+          alt="light_bulb_on_off"
+          id="myImage"
+        />
 
         <div class="div-section-inner">
           <button type="button" onclick="myFunction(1)">ON</button>
@@ -102,40 +127,21 @@
           </div>
         </div>
       </div>
+
+      <div class="div-section">
+        <h2>Classwork | 12 July 2025 | Show Paragraph</h2>
+        <div id="div-hidden">
+          <p>This is a paragraph.</p>
+          <button type="button" onclick="alertFunction()">Alert Button</button>
+        </div>
+        <button type="button" onclick="showFunction(1)">Click me</button>
+        <button type="button" onclick="showFunction(0)">Reset</button>
+      </div>
     </main>
     <footer>
       <p id="footer-section">- Rishav Chaudhary -</p>
     </footer>
 
-    <script>
-      function myFunction(a) {
-        let pic;
-        if (a == 0) {
-          pic = "./images/lightbulb.png";
-        } else {
-          pic = "./images/lightbulb_on.png";
-        }
-
-        let myImage = document.getElementById("myImage");
-
-        myImage.src = pic;
-
-        if (myImage.src === "./images/lightbulb_on.png") {
-          myImage.style.color = "green";
-        }
-      }
-
-      let span = document.getElementById("span-text");
-
-      function scaleText(a) {
-        if (a == 0) {
-          span.style.fontSize = "23px";
-          span.classList.add("hover-enabled");
-        } else {
-          span.style.fontSize = "16px";
-          span.classList.remove("hover-enabled");
-        }
-      }
-    </script>
+    <script src="./script.js" />
   </body>
 </html>

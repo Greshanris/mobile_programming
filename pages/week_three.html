@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week Three</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#buttonOne").click(function () {
+          $(".containerOne").fadeIn(2000);
+          $(".containerOne").css("display", "flex");
+          $(".containerTwo").fadeIn(10000);
+          $(".containerTwo").css("display", "flex");
+          $(".containerThree").fadeIn(15000);
+          $(".containerThree").css("display", "flex");
+          $(".containerFour").fadeIn(20000);
+          $(".containerFour").css("display", "flex");
+          $(".containerFive").fadeIn(25000);
+          $(".containerFive").css("display", "flex");
+        });
+
+        $("#buttonTwo").click(function () {
+          let firstDiv = $("#firstDiv");
+          firstDiv
+          .animate({ left: "250px" }, 1000, function() {
+            firstDiv.css("backgroundColor", "red")
+          })
+          .animate({width: "200px", height: "200px", opacity: "0.5"}, 1000)
+          .delay(1000)
+          .animate({width: "100px", height: "100px", opacity: "1" }, 1000, function() {
+            firstDiv.css("backgroundColor", "green");
+          })
+          .animate({left: "0px"}, 1000);
+        });
+      });
+    </script>
+    <style>
+      header {
+        text-align: center;
+        background-color: rgb(2, 51, 51);
+        color: wheat;
+        border-radius: 12px;
+        padding: 1px 0px;
+        margin: 2px 0px;
+      }
+
+      .containerOne {
+        width: 700px;
+        height: 700px;
+        margin: 10px;
+        background-color: rgb(192, 201, 192);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+      }
+
+      .containerTwo {
+        width: 90%;
+        height: 90%;
+        background-color: rgb(116, 101, 122);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+      }
+
+      .containerThree {
+        width: 80%;
+        height: 80%;
+        background-color: rgb(111, 253, 111);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+      }
+      .containerFour {
+        width: 70%;
+        height: 70%;
+        background-color: rgb(25, 119, 174);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+      }
+      .containerFive {
+        width: 60%;
+        height: 60%;
+        background-color: rgb(105, 188, 119);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+      }
+      button {
+        margin: 8px;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 12px;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      h3 {
+        margin: 12px;
+      }
+
+      button {
+        width: 120px;
+        height: 40px;
+        color: aliceblue;
+        background-color: rgba(14, 14, 43, 0.84);
+        border-radius: 12px;
+      }
+
+      button:active {
+        border: solid;
+        transition: 2s ease;
+      }
+
+      section {
+        background-color: antiquewhite;
+        width: 100%;
+        height: 100%;
+        margin: 4px;
+        border-radius: 12px;
+      }
+
+      #firstDiv {
+        background-color: green;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        left: 0;
+        margin: 12px;
+        border-radius: 12px;
+        box-shadow: 1px 1px "white";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(55, 51, 46);
+        background-color: beige;
+        border-radius: 12px;
+        padding: 3px;
+        font-size: 23px;
+      }
+
+      a:hover {
+        padding: 4px;
+        border: solid;
+        text-shadow: 1px;
+        box-shadow: 3px 3px 'white';
+        color: #000;
+        transition: ease-in 0.1s;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Div Exercise | Week Three | Jquery | <a href="/index.html">Home</a></h1>
+    </header>
+
+    <main>
+      <section>
+        <h3>First Day | 15 July, 2025</h3>
+        <button type="button" id="buttonOne" onclick="divFunction()">
+          Show
+        </button>
+        <div class="containerOne">
+          <div class="containerTwo">
+            <div class="containerThree">
+              <div class="containerFour">
+                <div class="containerFive"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Second Day | 17 July, 2025</h3>
+        <button type="button" id="buttonTwo">Click me</button>
+        <div id="firstDiv">
+        </div>
+      </section>
+    </main>
+
+    <footer>© 2025 Rishav Chaudhary. All rights reserved.</footer>
+  </body>
+</html>
