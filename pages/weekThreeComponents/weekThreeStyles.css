@@ -1,0 +1,156 @@
+body {
+  flex: 1;
+  background-color: rgb(178, 154, 124);
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(58, 123, 25, 0.54);
+  color: wheat;
+  border-radius: 12px;
+  padding: 1px 0px;
+  margin: 2px 2px;
+  border: 1px solid rgb(144, 135, 84);
+  box-shadow: 3px 3px 2px 4px rgb(85, 36, 30);
+}
+
+header:hover {
+  border: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
+}
+
+section {
+  background-color: antiquewhite;
+  width: 100%;
+  height: 100%;
+  margin: 4px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  margin: 12px;
+}
+
+.containerOne {
+  width: 700px;
+  height: 700px;
+  margin: 10px;
+  background-color: rgb(192, 201, 192);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.containerTwo {
+  width: 90%;
+  height: 90%;
+  background-color: rgb(116, 101, 122);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.containerThree {
+  width: 80%;
+  height: 80%;
+  background-color: rgb(111, 253, 111);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+.containerFour {
+  width: 70%;
+  height: 70%;
+  background-color: rgb(25, 119, 174);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+.containerFive {
+  width: 60%;
+  height: 60%;
+  background-color: rgb(105, 188, 119);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+button {
+  margin: 8px;
+}
+
+
+button {
+  width: 120px;
+  height: 40px;
+  color: aliceblue;
+  background-color: rgba(14, 14, 43, 0.84);
+  border-radius: 12px;
+}
+
+button:active {
+  border: solid;
+  transition: 2s ease;
+}
+
+#firstDiv {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 0;
+  margin: 12px;
+  border-radius: 12px;
+  box-shadow: 1px 1px "white";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(55, 51, 46);
+  background-color: beige;
+  border-radius: 12px;
+  padding: 3px;
+  font-size: 23px;
+}
+
+a:hover {
+  padding: 4px;
+  border: solid;
+  text-shadow: 1px;
+  box-shadow: 3px 3px "white";
+  color: #000;
+  transition: ease-in 0.1s;
+}
+
+#secondDiv {
+  height: 100px;
+  width: 100px;
+  background-color: tomato;
+  border: 1px solid;
+  margin: 12px;
+}
